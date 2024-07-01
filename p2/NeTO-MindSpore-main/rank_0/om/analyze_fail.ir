@@ -1,0 +1,206 @@
+# 1.This file shows the parsed IR info when graph evaluating failed to help find the problem.
+# 2.You can search the last `------------------------>` to the node which is inferred failed.
+# 3.Refer to https://www.mindspore.cn/search?inputValue=analyze_fail.ir to get more instructions.
+# ===============================================================================
+
+subgraph attr:
+skip_auto_parallel_compile : 1
+subgraph instance: mindspore_nn_optim_adam_Adam_construct.28 : 0xb6409f0
+# In file /home/wrh/.conda/envs/mindspore_wrh/lib/python3.8/site-packages/mindspore/nn/optim/adam.py:910/    def construct(self, gradients):/
+subgraph @mindspore_nn_optim_adam_Adam_construct.28(%para1_gradients, %para2_pts_linears.0.weight, %para3_pts_linears.0.bias, %para4_pts_linears.1.weight, %para5_pts_linears.1.bias, %para6_pts_linears.2.weight, %para7_pts_linears.2.bias, %para8_pts_linears.3.weight, %para9_pts_linears.3.bias, %para10_pts_linears.4.weight, %para11_pts_linears.4.bias, %para12_pts_linears.5.weight, %para13_pts_linears.5.bias, %para14_pts_linears.6.weight, %para15_pts_linears.6.bias, %para16_pts_linears.7.weight, %para17_pts_linears.7.bias, %para18_views_linears.0.weight, %para19_views_linears.0.bias, %para20_feature_linear.weight, %para21_feature_linear.bias, %para22_alpha_linear.weight, %para23_alpha_linear.bias, %para24_rgb_linear.weight, %para25_rgb_linear.bias, %para26_lin0.param_g, %para27_lin0.param_v, %para28_lin0.module.weight, %para29_lin0.module.bias, %para30_lin1.param_g, %para31_lin1.param_v, %para32_lin1.module.weight, %para33_lin1.module.bias, %para34_lin2.param_g, %para35_lin2.param_v, %para36_lin2.module.weight, %para37_lin2.module.bias, %para38_lin3.param_g, %para39_lin3.param_v, %para40_lin3.module.weight, %para41_lin3.module.bias, %para42_lin4.param_g, %para43_lin4.param_v, %para44_lin4.module.weight, %para45_lin4.module.bias, %para46_lin5.param_g, %para47_lin5.param_v, %para48_lin5.module.weight, %para49_lin5.module.bias, %para50_lin6.param_g, %para51_lin6.param_v, %para52_lin6.module.weight, %para53_lin6.module.bias, %para54_lin7.param_g, %para55_lin7.param_v, %para56_lin7.module.weight, %para57_lin7.module.bias, %para58_lin8.param_g, %para59_lin8.param_v, %para60_lin8.module.weight, %para61_lin8.module.bias, %para62_variance, %para63_moment1.pts_linears.0.weight, %para64_moment1.pts_linears.0.bias, %para65_moment1.pts_linears.1.weight, %para66_moment1.pts_linears.1.bias, %para67_moment1.pts_linears.2.weight, %para68_moment1.pts_linears.2.bias, %para69_moment1.pts_linears.3.weight, %para70_moment1.pts_linears.3.bias, %para71_moment1.pts_linears.4.weight, %para72_moment1.pts_linears.4.bias, %para73_moment1.pts_linears.5.weight, %para74_moment1.pts_linears.5.bias, %para75_moment1.pts_linears.6.weight, %para76_moment1.pts_linears.6.bias, %para77_moment1.pts_linears.7.weight, %para78_moment1.pts_linears.7.bias, %para79_moment1.views_linears.0.weight, %para80_moment1.views_linears.0.bias, %para81_moment1.feature_linear.weight, %para82_moment1.feature_linear.bias, %para83_moment1.alpha_linear.weight, %para84_moment1.alpha_linear.bias, %para85_moment1.rgb_linear.weight, %para86_moment1.rgb_linear.bias, %para87_moment1.lin0.param_g, %para88_moment1.lin0.param_v, %para89_moment1.lin0.module.weight, %para90_moment1.lin0.module.bias, %para91_moment1.lin1.param_g, %para92_moment1.lin1.param_v, %para93_moment1.lin1.module.weight, %para94_moment1.lin1.module.bias, %para95_moment1.lin2.param_g, %para96_moment1.lin2.param_v, %para97_moment1.lin2.module.weight, %para98_moment1.lin2.module.bias, %para99_moment1.lin3.param_g, %para100_moment1.lin3.param_v, %para101_moment1.lin3.module.weight, %para102_moment1.lin3.module.bias, %para103_moment1.lin4.param_g, %para104_moment1.lin4.param_v, %para105_moment1.lin4.module.weight, %para106_moment1.lin4.module.bias, %para107_moment1.lin5.param_g, %para108_moment1.lin5.param_v, %para109_moment1.lin5.module.weight, %para110_moment1.lin5.module.bias, %para111_moment1.lin6.param_g, %para112_moment1.lin6.param_v, %para113_moment1.lin6.module.weight, %para114_moment1.lin6.module.bias, %para115_moment1.lin7.param_g, %para116_moment1.lin7.param_v, %para117_moment1.lin7.module.weight, %para118_moment1.lin7.module.bias, %para119_moment1.lin8.param_g, %para120_moment1.lin8.param_v, %para121_moment1.lin8.module.weight, %para122_moment1.lin8.module.bias, %para123_moment1.variance, %para124_moment2.pts_linears.0.weight, %para125_moment2.pts_linears.0.bias, %para126_moment2.pts_linears.1.weight, %para127_moment2.pts_linears.1.bias, %para128_moment2.pts_linears.2.weight, %para129_moment2.pts_linears.2.bias, %para130_moment2.pts_linears.3.weight, %para131_moment2.pts_linears.3.bias, %para132_moment2.pts_linears.4.weight, %para133_moment2.pts_linears.4.bias, %para134_moment2.pts_linears.5.weight, %para135_moment2.pts_linears.5.bias, %para136_moment2.pts_linears.6.weight, %para137_moment2.pts_linears.6.bias, %para138_moment2.pts_linears.7.weight, %para139_moment2.pts_linears.7.bias, %para140_moment2.views_linears.0.weight, %para141_moment2.views_linears.0.bias, %para142_moment2.feature_linear.weight, %para143_moment2.feature_linear.bias, %para144_moment2.alpha_linear.weight, %para145_moment2.alpha_linear.bias, %para146_moment2.rgb_linear.weight, %para147_moment2.rgb_linear.bias, %para148_moment2.lin0.param_g, %para149_moment2.lin0.param_v, %para150_moment2.lin0.module.weight, %para151_moment2.lin0.module.bias, %para152_moment2.lin1.param_g, %para153_moment2.lin1.param_v, %para154_moment2.lin1.module.weight, %para155_moment2.lin1.module.bias, %para156_moment2.lin2.param_g, %para157_moment2.lin2.param_v, %para158_moment2.lin2.module.weight, %para159_moment2.lin2.module.bias, %para160_moment2.lin3.param_g, %para161_moment2.lin3.param_v, %para162_moment2.lin3.module.weight, %para163_moment2.lin3.module.bias, %para164_moment2.lin4.param_g, %para165_moment2.lin4.param_v, %para166_moment2.lin4.module.weight, %para167_moment2.lin4.module.bias, %para168_moment2.lin5.param_g, %para169_moment2.lin5.param_v, %para170_moment2.lin5.module.weight, %para171_moment2.lin5.module.bias, %para172_moment2.lin6.param_g, %para173_moment2.lin6.param_v, %para174_moment2.lin6.module.weight, %para175_moment2.lin6.module.bias, %para176_moment2.lin7.param_g, %para177_moment2.lin7.param_v, %para178_moment2.lin7.module.weight, %para179_moment2.lin7.module.bias, %para180_moment2.lin8.param_g, %para181_moment2.lin8.param_v, %para182_moment2.lin8.module.weight, %para183_moment2.lin8.module.bias, %para184_moment2.variance, %para185_beta1_power, %para186_beta2_power, %para187_learning_rate, %para188_global_step) {
+  %1([CNode]37) = S-Prim-logical_not(Bool(0))
+      : (<Bool, NoShape>) -> (<Bool, NoShape>)
+      #scope: (Default)
+      # In file /home/wrh/.conda/envs/mindspore_wrh/lib/python3.8/site-packages/mindspore/nn/optim/adam.py:916/        if not self.use_offload:/
+  %2([CNode]38) = Cond(%1, Bool(0))
+      : (<Bool, NoShape>, <Bool, NoShape>) -> (<Bool, NoShape>)
+      #scope: (Default)
+      # In file /home/wrh/.conda/envs/mindspore_wrh/lib/python3.8/site-packages/mindspore/nn/optim/adam.py:916/        if not self.use_offload:/
+  %3([CNode]39) = Switch(%2, call @✓mindspore_nn_optim_adam_Adam_construct.40, call @✗mindspore_nn_optim_adam_Adam_construct.41)
+      : (<Bool, NoShape>, <Func, NoShape>, <Func, NoShape>) -> (<Func, NoShape>)
+      #scope: (Default)
+      # In file /home/wrh/.conda/envs/mindspore_wrh/lib/python3.8/site-packages/mindspore/nn/optim/adam.py:916/        if not self.use_offload:/
+  %4([CNode]42) = %3()
+      #scope: (Default)
+      # In file /home/wrh/.conda/envs/mindspore_wrh/lib/python3.8/site-packages/mindspore/nn/optim/adam.py:916/        if not self.use_offload:/
+
+#------------------------> 0
+  %5([CNode]43) = call @↓mindspore_nn_optim_adam_Adam_construct.34(%4)
+      : (<Tensor[Float32], (512, 11)>) -> (<null>)
+      #scope: (Default)
+  Return(%5)
+      : (<null>)
+      #scope: (Default)
+      # In file /home/wrh/.conda/envs/mindspore_wrh/lib/python3.8/site-packages/mindspore/nn/optim/adam.py:916/        if not self.use_offload:/
+}
+# Order:
+#   1: @mindspore_nn_optim_adam_Adam_construct.28:gradients{[0]: ValueNode<FuncGraph> flatten_gradients.44, [1]: gradients}
+#   2: @mindspore_nn_optim_adam_Adam_construct.28:gradients{[0]: ValueNode<FuncGraph> decay_weight.45, [1]: gradients}
+#   3: @mindspore_nn_optim_adam_Adam_construct.28:[CNode]37{[0]: ValueNode<DoSignaturePrimitive> S-Prim-logical_not, [1]: ValueNode<BoolImm> false}
+#   4: @mindspore_nn_optim_adam_Adam_construct.28:[CNode]38{[0]: ValueNode<Primitive> Cond, [1]: [CNode]37, [2]: ValueNode<BoolImm> false}
+#   5: @mindspore_nn_optim_adam_Adam_construct.28:[CNode]39{[0]: ValueNode<Primitive> Switch, [1]: [CNode]38, [2]: ValueNode<FuncGraph> ✓mindspore_nn_optim_adam_Adam_construct.40, [3]: ValueNode<FuncGraph> ✗mindspore_nn_optim_adam_Adam_construct.41}
+#   6: @mindspore_nn_optim_adam_Adam_construct.28:[CNode]42{[0]: [CNode]39}
+#   7: @mindspore_nn_optim_adam_Adam_construct.28:[CNode]43{[0]: ValueNode<FuncGraph> ↓mindspore_nn_optim_adam_Adam_construct.34, [1]: [CNode]42}
+#   8: @mindspore_nn_optim_adam_Adam_construct.28:[CNode]46{[0]: ValueNode<Primitive> Return, [1]: [CNode]43}
+
+
+subgraph attr:
+after_block : 1
+skip_auto_parallel_compile : 1
+subgraph instance: ↓mindspore_nn_optim_adam_Adam_construct.34 : 0xb645810
+# In file /home/wrh/.conda/envs/mindspore_wrh/lib/python3.8/site-packages/mindspore/nn/optim/adam.py:916/        if not self.use_offload:/
+subgraph @↓mindspore_nn_optim_adam_Adam_construct.34 parent: [subgraph @mindspore_nn_optim_adam_Adam_construct.28](%para189_) {
+  %1(beta1_power) = S-Prim-mul(%para185_beta1_power, Tensor(43)[])
+      : (<Ref[Tensor[Float32]], ()>, <Tensor[Float32], ()>) -> (<Tensor[Float32], ()>)
+      #scope: (Default)
+      # In file /home/wrh/.conda/envs/mindspore_wrh/lib/python3.8/site-packages/mindspore/nn/optim/adam.py:922/        beta1_power = self.beta1_power * self.beta1/
+  %2([CNode]48) = call @assign.47(%para185_beta1_power, %1)
+      : (<Ref[Tensor[Float32]], ()>, <Tensor[Float32], ()>) -> (<Tensor[Float32], ()>)
+      #scope: (Default)
+      # In file /home/wrh/.conda/envs/mindspore_wrh/lib/python3.8/site-packages/mindspore/nn/optim/adam.py:923/        self.beta1_power = beta1_power/
+  %3(beta2_power) = S-Prim-mul(%para186_beta2_power, Tensor(43)[])
+      : (<Ref[Tensor[Float32]], ()>, <Tensor[Float32], ()>) -> (<Tensor[Float32], ()>)
+      #scope: (Default)
+      # In file /home/wrh/.conda/envs/mindspore_wrh/lib/python3.8/site-packages/mindspore/nn/optim/adam.py:924/        beta2_power = self.beta2_power * self.beta2/
+  %4([CNode]49) = call @assign.47(%para186_beta2_power, %3)
+      : (<Ref[Tensor[Float32]], ()>, <Tensor[Float32], ()>) -> (<Tensor[Float32], ()>)
+      #scope: (Default)
+      # In file /home/wrh/.conda/envs/mindspore_wrh/lib/python3.8/site-packages/mindspore/nn/optim/adam.py:925/        self.beta2_power = beta2_power/
+  %5([CNode]50) = MakeTuple(%2, %4)
+      : (<Tensor[Float32], ()>, <Tensor[Float32], ()>) -> (<Tuple[Tensor[Float32]*2], TupleShape((), ())>)
+      #scope: (Default)
+  %6([CNode]51) = StopGradient(%5)
+      : (<Tuple[Tensor[Float32]*2], TupleShape((), ())>) -> (<Tuple[Tensor[Float32]*2], TupleShape((), ())>)
+      #scope: (Default)
+  %7([CNode]52) = $(mindspore_nn_optim_adam_Adam_construct.28):MakeTuple(%para2_pts_linears.0.weight, %para3_pts_linears.0.bias, %para4_pts_linears.1.weight, %para5_pts_linears.1.bias, %para6_pts_linears.2.weight, %para7_pts_linears.2.bias, %para8_pts_linears.3.weight, %para9_pts_linears.3.bias, %para10_pts_linears.4.weight, %para11_pts_linears.4.bias, %para12_pts_linears.5.weight, %para13_pts_linears.5.bias, %para14_pts_linears.6.weight, %para15_pts_linears.6.bias, %para16_pts_linears.7.weight, %para17_pts_linears.7.bias, %para18_views_linears.0.weight, %para19_views_linears.0.bias, %para20_feature_linear.weight, %para21_feature_linear.bias, %para22_alpha_linear.weight, %para23_alpha_linear.bias, %para24_rgb_linear.weight, %para25_rgb_linear.bias, %para26_lin0.param_g, %para27_lin0.param_v, %para28_lin0.module.weight, %para29_lin0.module.bias, %para30_lin1.param_g, %para31_lin1.param_v, %para32_lin1.module.weight, %para33_lin1.module.bias, %para34_lin2.param_g, %para35_lin2.param_v, %para36_lin2.module.weight, %para37_lin2.module.bias, %para38_lin3.param_g, %para39_lin3.param_v, %para40_lin3.module.weight, %para41_lin3.module.bias, %para42_lin4.param_g, %para43_lin4.param_v, %para44_lin4.module.weight, %para45_lin4.module.bias, %para46_lin5.param_g, %para47_lin5.param_v, %para48_lin5.module.weight, %para49_lin5.module.bias, %para50_lin6.param_g, %para51_lin6.param_v, %para52_lin6.module.weight, %para53_lin6.module.bias, %para54_lin7.param_g, %para55_lin7.param_v, %para56_lin7.module.weight, %para57_lin7.module.bias, %para58_lin8.param_g, %para59_lin8.param_v, %para60_lin8.module.weight, %para61_lin8.module.bias, %para62_variance)
+      : (<Ref[Tensor[Float32]], (256, 84)>, <Ref[Tensor[Float32]], (256)>, <Ref[Tensor[Float32]], (256, 256)>, <Ref[Tensor[Float32]], (256)>, <Ref[Tensor[Float32]], (256, 256)>, <Ref[Tensor[Float32]], (256)>, <Ref[Tensor[Float32]], (256, 256)>, <Ref[Tensor[Float32]], (256)>, <Ref[Tensor[Float32]], (256, 256)>, <Ref[Tensor[Float32]], (256)>, <Ref[Tensor[Float32]], (256, 340)>, <Ref[Tensor[Float32]], (256)>, <Ref[Tensor[Float32]], (256, 256)>, <Ref[Tensor[Float32]], (256)>, <Ref[Tensor[Float32]], (256, 256)>, <Ref[Tensor[Float32]], (256)>, <Ref[Tensor[Float32]], (128, 283)>, <Ref[Tensor[Float32]], (128)>, <Ref[Tensor[Float32]], (256, 256)>, <Ref[Tensor[Float32]], (256)>, <Ref[Tensor[Float32]], (1, 256)>, <Ref[Tensor[Float32]], (1)>, <Ref[Tensor[Float32]], (3, 128)>, <Ref[Tensor[Float32]], (3)>, <Ref[Tensor[Float32]], (256, 1)>, <Ref[Tensor[Float32]], (256, 33)>, <Ref[Tensor[Float32]], (256, 33)>, <Ref[Tensor[Float32]], (256)>, <Ref[Tensor[Float32]], (256, 1)>, <Ref[Tensor[Float32]], (256, 256)>, <Ref[Tensor[Float32]], (256, 256)>, <Ref[Tensor[Float32]], (256)>, <Ref[Tensor[Float32]], (256, 1)>, <Ref[Tensor[Float32]], (256, 256)>, <Ref[Tensor[Float32]], (256, 256)>, <Ref[Tensor[Float32]], (256)>, <Ref[Tensor[Float32]], (223, 1)>, <Ref[Tensor[Float32]], (223, 256)>, <Ref[Tensor[Float32]], (223, 256)>, <Ref[Tensor[Float32]], (223)>, <Ref[Tensor[Float32]], (256, 1)>, <Ref[Tensor[Float32]], (256, 256)>, <Ref[Tensor[Float32]], (256, 256)>, <Ref[Tensor[Float32]], (256)>, <Ref[Tensor[Float32]], (256, 1)>, <Ref[Tensor[Float32]], (256, 256)>, <Ref[Tensor[Float32]], (256, 256)>, <Ref[Tensor[Float32]], (256)>, <Ref[Tensor[Float32]], (256, 1)>, <Ref[Tensor[Float32]], (256, 256)>, <Ref[Tensor[Float32]], (256, 256)>, <Ref[Tensor[Float32]], (256)>, <Ref[Tensor[Float32]], (256, 1)>, <Ref[Tensor[Float32]], (256, 256)>, <Ref[Tensor[Float32]], (256, 256)>, <Ref[Tensor[Float32]], (256)>, <Ref[Tensor[Float32]], (1, 1)>, <Ref[Tensor[Float32]], (1, 256)>, <Ref[Tensor[Float32]], (1, 256)>, <Ref[Tensor[Float32]], (1)>, <Ref[Tensor[Float32]], ()>) -> (<Tuple[Ref[Tensor[Float32]]*61], TupleShape((256, 84), (256), (256, 256), (256), (256, 256), (256), (256, 256), (256), (256, 256), (256), (256, 340), (256), (256, 256), (256), (256, 256), (256), (128, 283), (128), (256, 256), (256), (1, 256), (1), (3, 128), (3), (256, 1), (256, 33), (256, 33), (256), (256, 1), (256, 256), (256, 256), (256), (256, 1), (256, 256), (256, 256), (256), (223, 1), (223, 256), (223, 256), (223), (256, 1), (256, 256), (256, 256), (256), (256, 1), (256, 256), (256, 256), (256), (256, 1), (256, 256), (256, 256), (256), (256, 1), (256, 256), (256, 256), (256), (1, 1), (1, 256), (1, 256), (1), ())>)
+      #scope: (Default)
+      # In file /home/wrh/.conda/envs/mindspore_wrh/lib/python3.8/site-packages/mindspore/nn/optim/adam.py:911/        params = self._parameters/
+  %8([CNode]53) = $(mindspore_nn_optim_adam_Adam_construct.28):MakeTuple(%para63_moment1.pts_linears.0.weight, %para64_moment1.pts_linears.0.bias, %para65_moment1.pts_linears.1.weight, %para66_moment1.pts_linears.1.bias, %para67_moment1.pts_linears.2.weight, %para68_moment1.pts_linears.2.bias, %para69_moment1.pts_linears.3.weight, %para70_moment1.pts_linears.3.bias, %para71_moment1.pts_linears.4.weight, %para72_moment1.pts_linears.4.bias, %para73_moment1.pts_linears.5.weight, %para74_moment1.pts_linears.5.bias, %para75_moment1.pts_linears.6.weight, %para76_moment1.pts_linears.6.bias, %para77_moment1.pts_linears.7.weight, %para78_moment1.pts_linears.7.bias, %para79_moment1.views_linears.0.weight, %para80_moment1.views_linears.0.bias, %para81_moment1.feature_linear.weight, %para82_moment1.feature_linear.bias, %para83_moment1.alpha_linear.weight, %para84_moment1.alpha_linear.bias, %para85_moment1.rgb_linear.weight, %para86_moment1.rgb_linear.bias, %para87_moment1.lin0.param_g, %para88_moment1.lin0.param_v, %para89_moment1.lin0.module.weight, %para90_moment1.lin0.module.bias, %para91_moment1.lin1.param_g, %para92_moment1.lin1.param_v, %para93_moment1.lin1.module.weight, %para94_moment1.lin1.module.bias, %para95_moment1.lin2.param_g, %para96_moment1.lin2.param_v, %para97_moment1.lin2.module.weight, %para98_moment1.lin2.module.bias, %para99_moment1.lin3.param_g, %para100_moment1.lin3.param_v, %para101_moment1.lin3.module.weight, %para102_moment1.lin3.module.bias, %para103_moment1.lin4.param_g, %para104_moment1.lin4.param_v, %para105_moment1.lin4.module.weight, %para106_moment1.lin4.module.bias, %para107_moment1.lin5.param_g, %para108_moment1.lin5.param_v, %para109_moment1.lin5.module.weight, %para110_moment1.lin5.module.bias, %para111_moment1.lin6.param_g, %para112_moment1.lin6.param_v, %para113_moment1.lin6.module.weight, %para114_moment1.lin6.module.bias, %para115_moment1.lin7.param_g, %para116_moment1.lin7.param_v, %para117_moment1.lin7.module.weight, %para118_moment1.lin7.module.bias, %para119_moment1.lin8.param_g, %para120_moment1.lin8.param_v, %para121_moment1.lin8.module.weight, %para122_moment1.lin8.module.bias, %para123_moment1.variance)
+      : (<Ref[Tensor[Float32]], (256, 84)>, <Ref[Tensor[Float32]], (256)>, <Ref[Tensor[Float32]], (256, 256)>, <Ref[Tensor[Float32]], (256)>, <Ref[Tensor[Float32]], (256, 256)>, <Ref[Tensor[Float32]], (256)>, <Ref[Tensor[Float32]], (256, 256)>, <Ref[Tensor[Float32]], (256)>, <Ref[Tensor[Float32]], (256, 256)>, <Ref[Tensor[Float32]], (256)>, <Ref[Tensor[Float32]], (256, 340)>, <Ref[Tensor[Float32]], (256)>, <Ref[Tensor[Float32]], (256, 256)>, <Ref[Tensor[Float32]], (256)>, <Ref[Tensor[Float32]], (256, 256)>, <Ref[Tensor[Float32]], (256)>, <Ref[Tensor[Float32]], (128, 283)>, <Ref[Tensor[Float32]], (128)>, <Ref[Tensor[Float32]], (256, 256)>, <Ref[Tensor[Float32]], (256)>, <Ref[Tensor[Float32]], (1, 256)>, <Ref[Tensor[Float32]], (1)>, <Ref[Tensor[Float32]], (3, 128)>, <Ref[Tensor[Float32]], (3)>, <Ref[Tensor[Float32]], (256, 1)>, <Ref[Tensor[Float32]], (256, 33)>, <Ref[Tensor[Float32]], (256, 33)>, <Ref[Tensor[Float32]], (256)>, <Ref[Tensor[Float32]], (256, 1)>, <Ref[Tensor[Float32]], (256, 256)>, <Ref[Tensor[Float32]], (256, 256)>, <Ref[Tensor[Float32]], (256)>, <Ref[Tensor[Float32]], (256, 1)>, <Ref[Tensor[Float32]], (256, 256)>, <Ref[Tensor[Float32]], (256, 256)>, <Ref[Tensor[Float32]], (256)>, <Ref[Tensor[Float32]], (223, 1)>, <Ref[Tensor[Float32]], (223, 256)>, <Ref[Tensor[Float32]], (223, 256)>, <Ref[Tensor[Float32]], (223)>, <Ref[Tensor[Float32]], (256, 1)>, <Ref[Tensor[Float32]], (256, 256)>, <Ref[Tensor[Float32]], (256, 256)>, <Ref[Tensor[Float32]], (256)>, <Ref[Tensor[Float32]], (256, 1)>, <Ref[Tensor[Float32]], (256, 256)>, <Ref[Tensor[Float32]], (256, 256)>, <Ref[Tensor[Float32]], (256)>, <Ref[Tensor[Float32]], (256, 1)>, <Ref[Tensor[Float32]], (256, 256)>, <Ref[Tensor[Float32]], (256, 256)>, <Ref[Tensor[Float32]], (256)>, <Ref[Tensor[Float32]], (256, 1)>, <Ref[Tensor[Float32]], (256, 256)>, <Ref[Tensor[Float32]], (256, 256)>, <Ref[Tensor[Float32]], (256)>, <Ref[Tensor[Float32]], (1, 1)>, <Ref[Tensor[Float32]], (1, 256)>, <Ref[Tensor[Float32]], (1, 256)>, <Ref[Tensor[Float32]], (1)>, <Ref[Tensor[Float32]], ()>) -> (<Tuple[Ref[Tensor[Float32]]*61], TupleShape((256, 84), (256), (256, 256), (256), (256, 256), (256), (256, 256), (256), (256, 256), (256), (256, 340), (256), (256, 256), (256), (256, 256), (256), (128, 283), (128), (256, 256), (256), (1, 256), (1), (3, 128), (3), (256, 1), (256, 33), (256, 33), (256), (256, 1), (256, 256), (256, 256), (256), (256, 1), (256, 256), (256, 256), (256), (223, 1), (223, 256), (223, 256), (223), (256, 1), (256, 256), (256, 256), (256), (256, 1), (256, 256), (256, 256), (256), (256, 1), (256, 256), (256, 256), (256), (256, 1), (256, 256), (256, 256), (256), (1, 1), (1, 256), (1, 256), (1), ())>)
+      #scope: (Default)
+      # In file /home/wrh/.conda/envs/mindspore_wrh/lib/python3.8/site-packages/mindspore/nn/optim/adam.py:912/        moment1 = self.moment1/
+  %9([CNode]54) = $(mindspore_nn_optim_adam_Adam_construct.28):MakeTuple(%para124_moment2.pts_linears.0.weight, %para125_moment2.pts_linears.0.bias, %para126_moment2.pts_linears.1.weight, %para127_moment2.pts_linears.1.bias, %para128_moment2.pts_linears.2.weight, %para129_moment2.pts_linears.2.bias, %para130_moment2.pts_linears.3.weight, %para131_moment2.pts_linears.3.bias, %para132_moment2.pts_linears.4.weight, %para133_moment2.pts_linears.4.bias, %para134_moment2.pts_linears.5.weight, %para135_moment2.pts_linears.5.bias, %para136_moment2.pts_linears.6.weight, %para137_moment2.pts_linears.6.bias, %para138_moment2.pts_linears.7.weight, %para139_moment2.pts_linears.7.bias, %para140_moment2.views_linears.0.weight, %para141_moment2.views_linears.0.bias, %para142_moment2.feature_linear.weight, %para143_moment2.feature_linear.bias, %para144_moment2.alpha_linear.weight, %para145_moment2.alpha_linear.bias, %para146_moment2.rgb_linear.weight, %para147_moment2.rgb_linear.bias, %para148_moment2.lin0.param_g, %para149_moment2.lin0.param_v, %para150_moment2.lin0.module.weight, %para151_moment2.lin0.module.bias, %para152_moment2.lin1.param_g, %para153_moment2.lin1.param_v, %para154_moment2.lin1.module.weight, %para155_moment2.lin1.module.bias, %para156_moment2.lin2.param_g, %para157_moment2.lin2.param_v, %para158_moment2.lin2.module.weight, %para159_moment2.lin2.module.bias, %para160_moment2.lin3.param_g, %para161_moment2.lin3.param_v, %para162_moment2.lin3.module.weight, %para163_moment2.lin3.module.bias, %para164_moment2.lin4.param_g, %para165_moment2.lin4.param_v, %para166_moment2.lin4.module.weight, %para167_moment2.lin4.module.bias, %para168_moment2.lin5.param_g, %para169_moment2.lin5.param_v, %para170_moment2.lin5.module.weight, %para171_moment2.lin5.module.bias, %para172_moment2.lin6.param_g, %para173_moment2.lin6.param_v, %para174_moment2.lin6.module.weight, %para175_moment2.lin6.module.bias, %para176_moment2.lin7.param_g, %para177_moment2.lin7.param_v, %para178_moment2.lin7.module.weight, %para179_moment2.lin7.module.bias, %para180_moment2.lin8.param_g, %para181_moment2.lin8.param_v, %para182_moment2.lin8.module.weight, %para183_moment2.lin8.module.bias, %para184_moment2.variance)
+      : (<Ref[Tensor[Float32]], (256, 84)>, <Ref[Tensor[Float32]], (256)>, <Ref[Tensor[Float32]], (256, 256)>, <Ref[Tensor[Float32]], (256)>, <Ref[Tensor[Float32]], (256, 256)>, <Ref[Tensor[Float32]], (256)>, <Ref[Tensor[Float32]], (256, 256)>, <Ref[Tensor[Float32]], (256)>, <Ref[Tensor[Float32]], (256, 256)>, <Ref[Tensor[Float32]], (256)>, <Ref[Tensor[Float32]], (256, 340)>, <Ref[Tensor[Float32]], (256)>, <Ref[Tensor[Float32]], (256, 256)>, <Ref[Tensor[Float32]], (256)>, <Ref[Tensor[Float32]], (256, 256)>, <Ref[Tensor[Float32]], (256)>, <Ref[Tensor[Float32]], (128, 283)>, <Ref[Tensor[Float32]], (128)>, <Ref[Tensor[Float32]], (256, 256)>, <Ref[Tensor[Float32]], (256)>, <Ref[Tensor[Float32]], (1, 256)>, <Ref[Tensor[Float32]], (1)>, <Ref[Tensor[Float32]], (3, 128)>, <Ref[Tensor[Float32]], (3)>, <Ref[Tensor[Float32]], (256, 1)>, <Ref[Tensor[Float32]], (256, 33)>, <Ref[Tensor[Float32]], (256, 33)>, <Ref[Tensor[Float32]], (256)>, <Ref[Tensor[Float32]], (256, 1)>, <Ref[Tensor[Float32]], (256, 256)>, <Ref[Tensor[Float32]], (256, 256)>, <Ref[Tensor[Float32]], (256)>, <Ref[Tensor[Float32]], (256, 1)>, <Ref[Tensor[Float32]], (256, 256)>, <Ref[Tensor[Float32]], (256, 256)>, <Ref[Tensor[Float32]], (256)>, <Ref[Tensor[Float32]], (223, 1)>, <Ref[Tensor[Float32]], (223, 256)>, <Ref[Tensor[Float32]], (223, 256)>, <Ref[Tensor[Float32]], (223)>, <Ref[Tensor[Float32]], (256, 1)>, <Ref[Tensor[Float32]], (256, 256)>, <Ref[Tensor[Float32]], (256, 256)>, <Ref[Tensor[Float32]], (256)>, <Ref[Tensor[Float32]], (256, 1)>, <Ref[Tensor[Float32]], (256, 256)>, <Ref[Tensor[Float32]], (256, 256)>, <Ref[Tensor[Float32]], (256)>, <Ref[Tensor[Float32]], (256, 1)>, <Ref[Tensor[Float32]], (256, 256)>, <Ref[Tensor[Float32]], (256, 256)>, <Ref[Tensor[Float32]], (256)>, <Ref[Tensor[Float32]], (256, 1)>, <Ref[Tensor[Float32]], (256, 256)>, <Ref[Tensor[Float32]], (256, 256)>, <Ref[Tensor[Float32]], (256)>, <Ref[Tensor[Float32]], (1, 1)>, <Ref[Tensor[Float32]], (1, 256)>, <Ref[Tensor[Float32]], (1, 256)>, <Ref[Tensor[Float32]], (1)>, <Ref[Tensor[Float32]], ()>) -> (<Tuple[Ref[Tensor[Float32]]*61], TupleShape((256, 84), (256), (256, 256), (256), (256, 256), (256), (256, 256), (256), (256, 256), (256), (256, 340), (256), (256, 256), (256), (256, 256), (256), (128, 283), (128), (256, 256), (256), (1, 256), (1), (3, 128), (3), (256, 1), (256, 33), (256, 33), (256), (256, 1), (256, 256), (256, 256), (256), (256, 1), (256, 256), (256, 256), (256), (223, 1), (223, 256), (223, 256), (223), (256, 1), (256, 256), (256, 256), (256), (256, 1), (256, 256), (256, 256), (256), (256, 1), (256, 256), (256, 256), (256), (256, 1), (256, 256), (256, 256), (256), (1, 1), (1, 256), (1, 256), (1), ())>)
+      #scope: (Default)
+      # In file /home/wrh/.conda/envs/mindspore_wrh/lib/python3.8/site-packages/mindspore/nn/optim/adam.py:913/        moment2 = self.moment2/
+  %10(lr) = call @get_lr.55()
+      #scope: (Default)
+      # In file /home/wrh/.conda/envs/mindspore_wrh/lib/python3.8/site-packages/mindspore/nn/optim/adam.py:920/        lr = self.get_lr()/
+  %11(gradients) = call @scale_grad.56(%para189_фgradients)
+      : (<Tensor[Float32], (512, 11)>) -> (<Tensor[Float32], (512, 11)>)
+      #scope: (Default)
+      # In file /home/wrh/.conda/envs/mindspore_wrh/lib/python3.8/site-packages/mindspore/nn/optim/adam.py:918/        gradients = self.scale_grad(gradients)/
+
+#------------------------> 1
+  %12(gradients) = call @_grad_sparse_indices_deduplicate.35(%11)
+      : (<Tensor[Float32], (512, 11)>) -> (<null>)
+      #scope: (Default)
+      # In file /home/wrh/.conda/envs/mindspore_wrh/lib/python3.8/site-packages/mindspore/nn/optim/adam.py:919/        gradients = self._grad_sparse_indices_deduplicate(gradients)/
+  %13([CNode]58) = call @_apply_adam.57(%7, %1, %3, %8, %9, %10, %12)
+      : (<Tuple[Ref[Tensor[Float32]]*61], TupleShape((256, 84), (256), (256, 256), (256), (256, 256), (256), (256, 256), (256), (256, 256), (256), (256, 340), (256), (256, 256), (256), (256, 256), (256), (128, 283), (128), (256, 256), (256), (1, 256), (1), (3, 128), (3), (256, 1), (256, 33), (256, 33), (256), (256, 1), (256, 256), (256, 256), (256), (256, 1), (256, 256), (256, 256), (256), (223, 1), (223, 256), (223, 256), (223), (256, 1), (256, 256), (256, 256), (256), (256, 1), (256, 256), (256, 256), (256), (256, 1), (256, 256), (256, 256), (256), (256, 1), (256, 256), (256, 256), (256), (1, 1), (1, 256), (1, 256), (1), ())>, <Tensor[Float32], ()>, <Tensor[Float32], ()>, <Tuple[Ref[Tensor[Float32]]*61], TupleShape((256, 84), (256), (256, 256), (256), (256, 256), (256), (256, 256), (256), (256, 256), (256), (256, 340), (256), (256, 256), (256), (256, 256), (256), (128, 283), (128), (256, 256), (256), (1, 256), (1), (3, 128), (3), (256, 1), (256, 33), (256, 33), (256), (256, 1), (256, 256), (256, 256), (256), (256, 1), (256, 256), (256, 256), (256), (223, 1), (223, 256), (223, 256), (223), (256, 1), (256, 256), (256, 256), (256), (256, 1), (256, 256), (256, 256), (256), (256, 1), (256, 256), (256, 256), (256), (256, 1), (256, 256), (256, 256), (256), (1, 1), (1, 256), (1, 256), (1), ())>, <Tuple[Ref[Tensor[Float32]]*61], TupleShape((256, 84), (256), (256, 256), (256), (256, 256), (256), (256, 256), (256), (256, 256), (256), (256, 340), (256), (256, 256), (256), (256, 256), (256), (128, 283), (128), (256, 256), (256), (1, 256), (1), (3, 128), (3), (256, 1), (256, 33), (256, 33), (256), (256, 1), (256, 256), (256, 256), (256), (256, 1), (256, 256), (256, 256), (256), (223, 1), (223, 256), (223, 256), (223), (256, 1), (256, 256), (256, 256), (256), (256, 1), (256, 256), (256, 256), (256), (256, 1), (256, 256), (256, 256), (256), (256, 1), (256, 256), (256, 256), (256), (1, 1), (1, 256), (1, 256), (1), ())>, <Ref[Tensor[Float32]], ()>, <null>) -> (<null>)
+      #scope: (Default)
+      # In file /home/wrh/.conda/envs/mindspore_wrh/lib/python3.8/site-packages/mindspore/nn/optim/adam.py:927/        return self._apply_adam(params, beta1_power, beta2_power, moment1, moment2, lr, gradients)/
+  %14([CNode]59) = Depend[side_effect_propagate: I64(1)](%13, %6)
+      : (<null>, <Tuple[Tensor[Float32]*2], TupleShape((), ())>) -> (<null>)
+      #scope: (Default)
+      # In file /home/wrh/.conda/envs/mindspore_wrh/lib/python3.8/site-packages/mindspore/nn/optim/adam.py:927/        return self._apply_adam(params, beta1_power, beta2_power, moment1, moment2, lr, gradients)/
+  Return(%14)
+      : (<null>)
+      #scope: (Default)
+      # In file /home/wrh/.conda/envs/mindspore_wrh/lib/python3.8/site-packages/mindspore/nn/optim/adam.py:927/        return self._apply_adam(params, beta1_power, beta2_power, moment1, moment2, lr, gradients)/
+}
+# Order:
+#   1: @↓mindspore_nn_optim_adam_Adam_construct.34:gradients{[0]: ValueNode<FuncGraph> scale_grad.56, [1]: фgradients}
+#   2: @↓mindspore_nn_optim_adam_Adam_construct.34:gradients{[0]: ValueNode<FuncGraph> _grad_sparse_indices_deduplicate.35, [1]: gradients}
+#   3: @↓mindspore_nn_optim_adam_Adam_construct.34:lr{[0]: ValueNode<FuncGraph> get_lr.55}
+#   4: @↓mindspore_nn_optim_adam_Adam_construct.34:beta1_power{[0]: ValueNode<DoSignaturePrimitive> S-Prim-mul, [1]: beta1_power, [2]: ValueNode<Tensor> Tensor(shape=[], dtype=Float32, value=0.9)}
+#   5: @↓mindspore_nn_optim_adam_Adam_construct.34:[CNode]48{[0]: ValueNode<FuncGraph> assign.47, [1]: beta1_power, [2]: beta1_power}
+#   6: @↓mindspore_nn_optim_adam_Adam_construct.34:beta2_power{[0]: ValueNode<DoSignaturePrimitive> S-Prim-mul, [1]: beta2_power, [2]: ValueNode<Tensor> Tensor(shape=[], dtype=Float32, value=0.999)}
+#   7: @↓mindspore_nn_optim_adam_Adam_construct.34:[CNode]49{[0]: ValueNode<FuncGraph> assign.47, [1]: beta2_power, [2]: beta2_power}
+#   8: @↓mindspore_nn_optim_adam_Adam_construct.34:[CNode]58{[0]: ValueNode<FuncGraph> _apply_adam.57, [1]: [CNode]52, [2]: beta1_power, [3]: beta2_power, [4]: [CNode]53, [5]: [CNode]54, [6]: lr, [7]: gradients}
+#   9: @↓mindspore_nn_optim_adam_Adam_construct.34:[CNode]60{[0]: ValueNode<Primitive> Return, [1]: [CNode]59}
+
+
+subgraph attr:
+skip_auto_parallel_compile : 1
+subgraph instance: _grad_sparse_indices_deduplicate.35 : 0xb7f78d0
+# In file /home/wrh/.conda/envs/mindspore_wrh/lib/python3.8/site-packages/mindspore/nn/optim/optimizer.py:466/    def _grad_sparse_indices_deduplicate(self, gradients):/
+subgraph @_grad_sparse_indices_deduplicate.35(%para190_gradients) {
+  %1([CNode]61) = S-Prim-not_equal("GPU", "CPU")
+      : (<String, NoShape>, <String, NoShape>) -> (<Bool, NoShape>)
+      #scope: (Default)
+      # In file /home/wrh/.conda/envs/mindspore_wrh/lib/python3.8/site-packages/mindspore/nn/optim/optimizer.py:468/        if self._target != 'CPU' and self._unique:/
+  %2([CNode]62) = Cond(%1, Bool(0))
+      : (<Bool, NoShape>, <Bool, NoShape>) -> (<Bool, NoShape>)
+      #scope: (Default)
+      # In file /home/wrh/.conda/envs/mindspore_wrh/lib/python3.8/site-packages/mindspore/nn/optim/optimizer.py:468/        if self._target != 'CPU' and self._unique:/
+  %3([CNode]63) = Switch(%2, call @↰_grad_sparse_indices_deduplicate.64, call @↱_grad_sparse_indices_deduplicate.65)
+      : (<Bool, NoShape>, <Func, NoShape>, <Func, NoShape>) -> (<Func, NoShape>)
+      #scope: (Default)
+      # In file /home/wrh/.conda/envs/mindspore_wrh/lib/python3.8/site-packages/mindspore/nn/optim/optimizer.py:468/        if self._target != 'CPU' and self._unique:/
+  %4([CNode]66) = %3()
+      #scope: (Default)
+      # In file /home/wrh/.conda/envs/mindspore_wrh/lib/python3.8/site-packages/mindspore/nn/optim/optimizer.py:468/        if self._target != 'CPU' and self._unique:/
+  %5([CNode]67) = Cond(%4, Bool(0))
+      : (<Bool, NoShape>, <Bool, NoShape>) -> (<Bool, NoShape>)
+      #scope: (Default)
+      # In file /home/wrh/.conda/envs/mindspore_wrh/lib/python3.8/site-packages/mindspore/nn/optim/optimizer.py:468/        if self._target != 'CPU' and self._unique:/
+  %6([CNode]68) = Switch(%5, call @✓_grad_sparse_indices_deduplicate.36, call @✗_grad_sparse_indices_deduplicate.69)
+      : (<Bool, NoShape>, <Func, NoShape>, <Func, NoShape>) -> (<Func, NoShape>)
+      #scope: (Default)
+      # In file /home/wrh/.conda/envs/mindspore_wrh/lib/python3.8/site-packages/mindspore/nn/optim/optimizer.py:468/        if self._target != 'CPU' and self._unique:/
+
+#------------------------> 2
+  %7([CNode]70) = %6()
+      #scope: (Default)
+      # In file /home/wrh/.conda/envs/mindspore_wrh/lib/python3.8/site-packages/mindspore/nn/optim/optimizer.py:468/        if self._target != 'CPU' and self._unique:/
+  %8([CNode]72) = call @↓_grad_sparse_indices_deduplicate.71(%7)
+      : (<null>) -> (<null>)
+      #scope: (Default)
+      # In file /home/wrh/.conda/envs/mindspore_wrh/lib/python3.8/site-packages/mindspore/nn/optim/adam.py:919/        gradients = self._grad_sparse_indices_deduplicate(gradients)/
+  Return(%8)
+      : (<null>)
+      #scope: (Default)
+      # In file /home/wrh/.conda/envs/mindspore_wrh/lib/python3.8/site-packages/mindspore/nn/optim/optimizer.py:468/        if self._target != 'CPU' and self._unique:/
+}
+# Order:
+#   1: @_grad_sparse_indices_deduplicate.35:[CNode]61{[0]: ValueNode<DoSignaturePrimitive> S-Prim-not_equal, [1]: ValueNode<StringImm> GPU, [2]: ValueNode<StringImm> CPU}
+#   2: @_grad_sparse_indices_deduplicate.35:[CNode]62{[0]: ValueNode<Primitive> Cond, [1]: [CNode]61, [2]: ValueNode<BoolImm> false}
+#   3: @_grad_sparse_indices_deduplicate.35:[CNode]63{[0]: ValueNode<Primitive> Switch, [1]: [CNode]62, [2]: ValueNode<FuncGraph> ↰_grad_sparse_indices_deduplicate.64, [3]: ValueNode<FuncGraph> ↱_grad_sparse_indices_deduplicate.65}
+#   4: @_grad_sparse_indices_deduplicate.35:[CNode]66{[0]: [CNode]63}
+#   5: @_grad_sparse_indices_deduplicate.35:[CNode]67{[0]: ValueNode<Primitive> Cond, [1]: [CNode]66, [2]: ValueNode<BoolImm> false}
+#   6: @_grad_sparse_indices_deduplicate.35:[CNode]68{[0]: ValueNode<Primitive> Switch, [1]: [CNode]67, [2]: ValueNode<FuncGraph> ✓_grad_sparse_indices_deduplicate.36, [3]: ValueNode<FuncGraph> ✗_grad_sparse_indices_deduplicate.69}
+#   7: @_grad_sparse_indices_deduplicate.35:[CNode]70{[0]: [CNode]68}
+#   8: @_grad_sparse_indices_deduplicate.35:[CNode]72{[0]: ValueNode<FuncGraph> ↓_grad_sparse_indices_deduplicate.71, [1]: [CNode]70}
+#   9: @_grad_sparse_indices_deduplicate.35:[CNode]73{[0]: ValueNode<Primitive> Return, [1]: [CNode]72}
+
+
+subgraph attr:
+skip_auto_parallel_compile : 1
+subgraph instance: ✓_grad_sparse_indices_deduplicate.36 : 0xb8091e0
+# In file /home/wrh/.conda/envs/mindspore_wrh/lib/python3.8/site-packages/mindspore/nn/optim/optimizer.py:468/        if self._target != 'CPU' and self._unique:/
+subgraph @✓_grad_sparse_indices_deduplicate.36 parent: [subgraph @_grad_sparse_indices_deduplicate.35]() {
+  %1([CNode]74) = S-Prim-Partial[side_effect_propagate: I64(1)](S-Prim-indices_deduplicate)
+      : (<Func, NoShape>) -> (<Func, NoShape>)
+      #scope: (Default)
+      # In file /home/wrh/.conda/envs/mindspore_wrh/lib/python3.8/site-packages/mindspore/nn/optim/optimizer.py:469/            gradients = self.map_(F.partial(_indices_deduplicate), gradients)/
+
+#------------------------> 3
+  %2(gradients) = S-Prim-map(%1, %para190_gradients)
+      : (<Func, NoShape>, <Tensor[Float32], (512, 11)>) -> (<null>)
+      #scope: (Default)
+      # In file /home/wrh/.conda/envs/mindspore_wrh/lib/python3.8/site-packages/mindspore/nn/optim/optimizer.py:469/            gradients = self.map_(F.partial(_indices_deduplicate), gradients)/
+  Return(%2)
+      : (<null>)
+      #scope: (Default)
+      # In file /home/wrh/.conda/envs/mindspore_wrh/lib/python3.8/site-packages/mindspore/nn/optim/optimizer.py:469/            gradients = self.map_(F.partial(_indices_deduplicate), gradients)/
+}
+# Order:
+#   1: @✓_grad_sparse_indices_deduplicate.36:[CNode]74{[0]: ValueNode<DoSignaturePrimitive> S-Prim-Partial, [1]: ValueNode<DoSignaturePrimitive> S-Prim-indices_deduplicate}
+#   2: @✓_grad_sparse_indices_deduplicate.36:gradients{[0]: ValueNode<DoSignaturePrimitive> S-Prim-map, [1]: [CNode]74, [2]: gradients}
+#   3: @✓_grad_sparse_indices_deduplicate.36:[CNode]75{[0]: ValueNode<Primitive> Return, [1]: gradients}
+
+
+#===============================================================================
+# num of function graphs in stack: 4/5 (Ignored 1 internal frames).

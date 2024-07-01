@@ -1,0 +1,8 @@
+,img,gt,back_gt,B,G,R
+0,./dataset/Jung/test/img/0154.JPG,./dataset/Jung/test/gt/0154.JPG,./dataset/Jung/test/back_gt/0154.JPG,0,0,0
+1,./dataset/Jung/test/img/0155.JPG,./dataset/Jung/test/gt/0155.JPG,./dataset/Jung/test/back_gt/0155.JPG,0,0,0
+2,./dataset/Jung/test/img/0156.JPG,./dataset/Jung/test/gt/0156.JPG,./dataset/Jung/test/back_gt/0156.JPG,0,0,0
+3,./dataset/Jung/test/img/0157.JPG,./dataset/Jung/test/gt/0157.JPG,./dataset/Jung/test/back_gt/0157.JPG,0,0,0
+4,./dataset/Jung/test/img/0158.JPG,./dataset/Jung/test/gt/0158.JPG,./dataset/Jung/test/back_gt/0158.JPG,0,0,0
+5,./dataset/Jung/test/img/0159.JPG,./dataset/Jung/test/gt/0159.JPG,./dataset/Jung/test/back_gt/0159.JPG,0,0,0
+6,./dataset/Jung/test/img/0160.JPG,./dataset/Jung/test/gt/0160.JPG,./dataset/Jung/test/back_gt/0160.JPG,0,0,0

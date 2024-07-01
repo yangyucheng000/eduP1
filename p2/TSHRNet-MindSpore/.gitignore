@@ -1,0 +1,5 @@
+test_result_*/
+logs_*/
+checkpoints_*/
+__pycache__/
+evaluation

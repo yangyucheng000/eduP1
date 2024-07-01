@@ -1,0 +1,24 @@
+python process_transparent.py --path /mnt/data4/Lzc/DRT_data/our/d0129 --mode dog32 --views 32 --save_path /mnt/data4/Lzc/DRT_data/our/d0129
+
+
+
+24
+conda activate trans
+cd /home/user/lzc/Pro/Python_EnvMatt/Python_EnvMatt
+python process_transparent.py --path /mnt/data/lzc/DRT_data/our/d0129 --mode dog32 --views 32 --save_path /mnt/data/lzc/DRT_data/our/d0129
+
+cd /home/yswang/code/Python_EnvMatt
+conda activate neucon
+python process_transparent.py --path /mnt/data4/Lzc/DRT_data/our/d0129 --mode dog32 --views 32 --save_path /mnt/data4/Lzc/DRT_data/our/d0129/dog32
+
+
+
+
+/usr/local/bin/povray calib.pov calib.ini
+/usr/local/bin/povray alpha_matting.pov alpha_matting.ini
+/usr/local/bin/povray ray_ray_corresp.pov ray_ray_corresp.ini
+cd /home/yswang/code/WuTransRecon/synthetic/POV-Ray
+
+
+
+python process_transparent.py --path /mnt/data4/Lzc/DRT_data/our/d0312 --mode tiger16 --views 16 --save_path /mnt/data4/Lzc/DRT_data/our/d0312/tiger16
